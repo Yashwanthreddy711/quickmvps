@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "How do you deliver projects so quickly?",
-      answer: "We've refined our process to focus on efficiency without sacrificing quality. We use a modular architecture, predefined components, and a dedicated development team that works exclusively on your project during the 2-week sprint."
+      answer: "We've refined our process to focus on efficiency without sacrificing quality. We use a modular architecture, predefined components, and a dedicated development team that works exclusively on your project during the 3-week sprint."
     },
     {
       question: "What happens after the MVP is delivered?",
@@ -20,11 +20,11 @@ const FAQ: React.FC = () => {
     },
     {
       question: "What technologies do you work with?",
-      answer: "We specialize in modern web and mobile technologies including React, Node.js, React Native, and Flutter. Our backend solutions typically use Node.js, Python, or Go depending on your specific requirements."
+      answer: "We specialize in modern technologies include Nextjs,React js,Supabase,NodeJS"
     },
     {
       question: "Can I request changes during development?",
-      answer: "Yes, we maintain open communication throughout the 2-week development cycle. You'll receive regular updates and can provide feedback. We accommodate refinements within the scope of the agreed-upon feature set."
+      answer: "Yes, we maintain open communication throughout the 3-week development cycle. You'll receive regular updates and can provide feedback. We accommodate refinements within the scope of the agreed-upon feature set."
     }
   ];
   

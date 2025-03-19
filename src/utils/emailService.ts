@@ -1,22 +1,11 @@
 import { Resend } from 'resend';
 
-// Initialize Resend with API key
-// Note: In production, use environment variables for API keys
-let resendInstance: Resend | null = null;
+// Initialize Resend with API key from environment variable
+const RESEND_API_KEY = import.meta.env.VITE_RESEND_API_KEY;
 
-export const initResend = (apiKey: string) => {
-  resendInstance = new Resend(apiKey);
-  return resendInstance;
-};
-
-export const getResend = () => {
-  if (!resendInstance) {
-    throw new Error('Resend not initialized. Call initResend first with your API key.');
-  }
-  return resendInstance;
-};
-
-const RESEND_API_KEY = 're_JVWkjUbU_LvmjbTW2T8GSpR2cBaJoA39H';
+if (!RESEND_API_KEY) {
+  throw new Error('VITE_RESEND_API_KEY environment variable is not set');
+}
 
 const resend = new Resend(RESEND_API_KEY);
 

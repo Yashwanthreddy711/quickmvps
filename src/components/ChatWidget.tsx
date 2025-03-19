@@ -155,7 +155,7 @@ const ChatWidget: React.FC = () => {
                             <input
                               type="text"
                               id="name"
-                              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-black"
                               placeholder="Your Name"
                               value={name}
                               onChange={(e) => setName(e.target.value)}
@@ -168,7 +168,7 @@ const ChatWidget: React.FC = () => {
                             <input
                               type="email"
                               id="email"
-                              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-black"
                               placeholder="Your Email"
                               value={email}
                               onChange={(e) => setEmail(e.target.value)}
@@ -181,7 +181,7 @@ const ChatWidget: React.FC = () => {
                             <input
                               type="tel"
                               id="phone"
-                              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+                              className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 text-black"
                               placeholder="Your Phone (Optional)"
                               value={phone}
                               onChange={(e) => setPhone(e.target.value)}
@@ -213,7 +213,7 @@ const ChatWidget: React.FC = () => {
                           </label>
                           <textarea
                             id="idea"
-                            className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 h-32 resize-none"
+                            className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 h-32 resize-none text-black"
                             placeholder="Describe your MVP idea"
                             value={idea}
                             onChange={(e) => setIdea(e.target.value)}
