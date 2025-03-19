@@ -10,7 +10,7 @@ const BookCall: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-blue/5 rounded-full blur-3xl -z-10 opacity-30"></div>
       
       <div className="container">
-        <div className="max-w-xl mx-auto text-center mb-16">
+        <div className="max-w-xl mx-auto text-center mb-16 -mt-20">
           <h2 className="section-title font-light">Book a Discovery Call</h2>
           <p className="mt-4 text-white/60 font-light">Schedule a call to discuss your MVP needs and explore how we can bring your vision to life.</p>
         </div>

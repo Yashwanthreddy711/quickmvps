@@ -75,8 +75,8 @@ const FAQ: React.FC = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <p className="mb-5 text-white/60 font-light">Still have questions?</p>
-          <a href="#book" className="btn-primary">Book a Call</a>
+          <p className=" text-white/60 font-light">Still have questions?</p>
+          {/* <a href="#book" className="btn-primary">Book a Call</a> */}
         </div>
       </div>
     </section>
