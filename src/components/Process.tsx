@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Phone, FileText, Code, Package, Wrench } from 'lucide-react';
 
@@ -109,7 +108,7 @@ const Process: React.FC = () => {
                 
                 {/* Center icon */}
                 <div 
-                  className={`absolute left-1/2 transform -translate-x-1/2 z-10 w-12 h-12 rounded-full ${
+                  className={`absolute left-1/2  transform -translate-x-1/2 z-10 w-12 h-12 rounded-full ${
                     index <= activeStep 
                       ? 'bg-premium-gradient shadow-glow-purple' 
                       : 'bg-black/40 border border-white/10'
@@ -129,27 +128,29 @@ const Process: React.FC = () => {
         
         {/* Mobile process timeline */}
         <div className="md:hidden">
-          <div className="relative pl-10 border-l border-white/10">
+          <div className="relative pl-16 border-l border-white/10">
             {steps.map((step, index) => (
               <div 
                 key={index} 
-                className={`mb-12 transition-all duration-500 ${
+                className={`mb-24 relative transition-all duration-500 ${
                   index <= activeStep ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-10'
                 }`}
               >
                 <div 
-                  className={`absolute left-0 transform -translate-x-1/2 w-8 h-8 rounded-full ${
+                  className={`absolute left-0 -translate-x-1/2 w-10 h-10 rounded-full ${
                     index <= activeStep 
                       ? 'bg-premium-gradient shadow-glow-purple' 
                       : 'bg-black/40 border border-white/10'
                   } flex items-center justify-center transition-all duration-300`}
                 >
-                  <step.icon className={`w-4 h-4 ${
+                  <step.icon className={`w-5 h-5 ${
                     index <= activeStep ? 'text-white' : 'text-white/50'
                   }`} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-light mb-2">{step.title}</h3>
-                <p className="text-white/60 font-light">{step.description}</p>
+                <div className="pl-6">
+                  <h3 className="text-lg font-light mb-2">{step.title}</h3>
+                  <p className="text-sm text-white/60 font-light leading-relaxed max-w-xs">{step.description}</p>
+                </div>
               </div>
             ))}
           </div>

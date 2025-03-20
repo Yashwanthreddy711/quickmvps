@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -10,9 +9,13 @@ const BookCall: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-blue/5 rounded-full blur-3xl -z-10 opacity-30"></div>
       
       <div className="container">
-        <div className="max-w-xl mx-auto text-center mb-16 -mt-20">
-          <h2 className="section-title font-light">Book a Discovery Call</h2>
-          <p className="mt-4 text-white/60 font-light">Schedule a call to discuss your MVP needs and explore how we can bring your vision to life.</p>
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-light mb-6 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
+            Book a Discovery Call
+          </h2>
+          <p className="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto">
+            Schedule a call to discuss your MVP needs and explore how we can bring your vision to life.
+          </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">

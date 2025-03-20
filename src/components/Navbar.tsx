@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
@@ -100,11 +99,11 @@ const Navbar: React.FC<NavbarProps> = ({ currentSection }) => {
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-white p-2 focus:outline-none z-10"
+            className="md:hidden text-white p-2 focus:outline-none z-50 relative hover:bg-white/10 rounded-lg transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} className="text-white" /> : <Menu size={24} />}
           </button>
         </div>
         

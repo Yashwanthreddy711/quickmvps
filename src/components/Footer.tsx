@@ -81,9 +81,9 @@ const Footer: React.FC = () => {
                   quickmvps@gmail.com
                 </a>
               </li>
-              <li className="text-white/50 text-sm font-light">
+              {/* <li className="text-white/50 text-sm font-light">
                 San Francisco, CA
-              </li>
+              </li> */}
             </ul>
           </div>
           
