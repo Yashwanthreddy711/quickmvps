@@ -88,70 +88,11 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Newsletter */}
-          <div className="md:col-span-1">
-            <h4 className="text-base font-light mb-4 text-center md:text-left">Stay Updated</h4>
-            <form onSubmit={handleSubmit} className="space-y-3 relative">
-              <div>
-                <input 
-                  type="email" 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address" 
-                  className="w-full bg-black/40 border border-white/10 rounded-md px-4 py-2 text-white placeholder-white/30 focus:outline-none focus:border-white/20 text-sm font-light"
-                  disabled={status === 'loading'}
-                />
-              </div>
-              <button 
-                type="submit"
-                disabled={status === 'loading'}
-                className={`w-full bg-black/40 border border-white/10 hover:bg-premium-gradient hover:border-transparent text-white rounded-md py-2 transition-all text-sm font-light flex items-center justify-center ${
-                  status === 'loading' ? 'opacity-70 cursor-not-allowed' : ''
-                }`}
-              >
-                {status === 'loading' ? (
-                  <>
-                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                    Subscribing...
-                  </>
-                ) : 'Subscribe'}
-              </button>
-
-              {/* Status message */}
-              <AnimatePresence>
-                {message && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className={`absolute -bottom-8 left-0 right-0 text-center text-sm ${
-                      status === 'success' ? 'text-green-400' : 'text-red-400'
-                    }`}
-                  >
-                    {message}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </form>
-          </div>
+          
         </div>
         
-        {/* Social icons */}
-        <div className="flex justify-center space-x-5 my-10">
-          {[
-            { Icon: Twitter, href: 'https://x.com/QuickMvps' },
-            { Icon: Linkedin, href: '#' }
-          ].map(({ Icon, href }, index) => (
-            <a 
-              key={index}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-black/40 border border-white/10 flex items-center justify-center hover:bg-premium-gradient hover:border-transparent transition-all duration-300"
-            >
-              <Icon className="w-4 h-4 text-white" strokeWidth={1.5} />
-            </a>
-          ))}
-        </div>
+       
+              
         
         {/* Copyright */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center">
@@ -159,7 +100,7 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} QuickMvp. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            {['Terms', 'Privacy', 'Cookies'].map((item) => (
+            {['Terms', 'Privacy'].map((item) => (
               <a 
                 key={item}
                 href="#"

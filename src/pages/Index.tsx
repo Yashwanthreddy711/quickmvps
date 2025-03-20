@@ -88,8 +88,8 @@ const Index = () => {
       
       <Footer />
       
-      <ChatWidget />
-      <CookieConsent />
+      {/* <ChatWidget /> */}
+      {/* <CookieConsent /> */}
     </div>
   );
 };
